@@ -20,10 +20,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //init recycler viw by id
         recyclerView = findViewById(R.id.recyclerView);
+        //llayoumanager is needed to set the orientation for recycler
         layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        //setting the layoutmanager directly
         recyclerView.setLayoutManager(layoutManager);
 
+        //inint the recycler with some data, the data is given with context
         sajinRecyclerViewAdapter = new SajinRecyclerViewAdapter(getCountryList(), MainActivity.this);
 
         recyclerView.setAdapter(sajinRecyclerViewAdapter);

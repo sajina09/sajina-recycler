@@ -12,7 +12,6 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-
         android:id="@+id/img_flag"
         android:layout_width="55sp"
         android:layout_height="55sp"
